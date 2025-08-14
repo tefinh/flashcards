@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashcards</title>
+  <meta charset="UTF-8" />
+  <!-- Garante que o site fique responsivo -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Importa o CSS para estilizar a página -->
+  <link rel="stylesheet" href="style.css" />
+  <title>Flashcards</title> <!-- Nome que aparece na aba do navegador -->
 </head>
 <body>
-    <main>
-        <section id="container">
-            <article class="cartao">
-                <div class="cartao_conteudo"> 
-                    <h3>Programação</h3>
-                    <div class="cartao_conteudo_pergunta">
-                         O que é Javascript?
-                    </div>
-                    <div class="cartao_conteudo_pergunta">
-                       O Javascript é uma linguagem de programação
-                    </div>
-                </div>
-            </article>
+  <main>
+    <!-- Aqui dentro os cartões serão colocados via JavaScript -->
+    <section id="container"></section>
+  </main>
 
-        </section>
+  <footer>
+    <p>Projeto desenvolvido pelo 2º Ano do Colégio Estadual do Campo de Alto São João EFM</p>
+  </footer>
 
-    </main>
-
-    <footer>
-    <p>Projeto desenvolvido pelo Alura, sem fins lucrativos</p>
-    </footer>
-    
+  <!-- Primeiro o app.js que define como o cartão é criado -->
+  <script src="app.js"></script>
+  <!-- Depois o perguntas.js que envia os dados dos cartões -->
+  <script src="perguntas.js"></script>
 </body>
 </html>
